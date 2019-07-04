@@ -1,0 +1,6 @@
+{
+  "env_name": "transloc",
+  "user": "qa_user_1",
+  "password": "!8DppYc6AnHr",
+  "url": "https://login.stage.transloc.com/login/?next=https://architect.stage.transloc.com/"
+}
