@@ -1,6 +1,7 @@
 from behave import step
 from nose.tools import assert_in,assert_equal,assert_true,assert_false
 from selenium.common.exceptions import NoSuchElementException
+from time import sleep
 
 @step('I go to transloc')
 def go_to_transloc(context):
@@ -43,3 +44,12 @@ def confirm_not_login(context):
 def invalid_credentials_error(context):
     error = context.driver.find_element_by_class_name('alert-warning').text
     assert_equal(error, 'Incorrect username/email or password.', 'Incorrect error text found')
+
+@step('I log in')
+def login(context):
+    context.execute_steps("""
+        Given I go to transloc
+        And I enter a valid user and password
+        And I click login
+    """)
+    sleep(2)

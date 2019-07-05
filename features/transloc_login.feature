@@ -1,4 +1,4 @@
-Feature: test transloc
+Feature: test transloc log in
 
   Scenario: Can log in with valid user and password
     Given I go to transloc
