@@ -1,4 +1,4 @@
-# transloc_excercise
+# transloc_exercise
 
 This framework uses behave to run tests against the web ui with selenium
 
