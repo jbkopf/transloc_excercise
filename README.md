@@ -1,5 +1,7 @@
 # transloc_excercise
 
+This framework uses behave to run tests against the web ui with selenium
+
 To run this test case first clone this repository
 
 Install requirements `pip install -r requirements.txt`
